@@ -4,7 +4,7 @@ const {
   getTransactions,
   getTransactionDetails,
 } = require("../controllers/transactionController");
-const { protect } = require("../middlewares/authMiddleware");
+const { protect } = require("../Middlewares/authMiddleware");
 
 const router = express.Router();
 

@@ -8,7 +8,7 @@ const {
   updatePassword,
   updateUserProfilePic,
 } = require("../controllers/settingController");
-const { protect } = require("../middlewares/authMiddleware");
+const { protect } = require("../Middlewares/authMiddleware");
 const upload = require("../Middlewares/multerConfig");
 
 const router = express.Router();
