@@ -20,12 +20,11 @@ mongoose
 
 // Configure CORS
 const corsOptions = {
-  origin: "https://wallet-frontend-qz68.vercel.app",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
+  origin: "https://wallet-frontend-sigma-nine.vercel.app",
+  methods: "GET,POST,PUT,DELETE,PATCH,OPTIONS",
+  allowedHeaders: "X-Requested-With, Content-Type, Authorization",
+  optionsSuccessStatus: 200,
 };
-
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
 
