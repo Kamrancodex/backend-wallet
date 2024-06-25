@@ -23,7 +23,7 @@ mongoose
 
 // Configure CORS
 const corsOptions = {
-  origin: "https://wallet-frontend-sigma-nine.vercel.app/", // Replace with your frontend URL
+  origin: "https://wallet-frontend-qz68.vercel.app/", // Replace with your frontend URL
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
