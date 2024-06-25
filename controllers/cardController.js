@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const Card = require("../models/Card");
 const Kyc = require("../models/Kyc");
-const sendSMS = require("../sendSMS"); // Assuming you have a function to send SMS for phone verification
+
 const sendEmail = require("../sendEmail");
 
 exports.applyForCreditCard = async (req, res) => {
