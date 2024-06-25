@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KYC Approval</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+      }
+      .header {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #dddddd;
+      }
+      .content {
+        padding: 20px;
+      }
+      .card-details {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #dddddd;
+        font-size: 12px;
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>KYC Approved</h1>
+      </div>
+      <div class="content">
+        <p>Dear user,</p>
+        <p>
+          We are pleased to inform you that your KYC (Know Your Customer)
+          verification has been successfully approved.
+        </p>
+        <p>
+          As part of this approval, a new credit card has been issued to you.
+          Below are your card details:
+        </p>
+        <p class="card-details">Card Number: {{cardNumber}}</p>
+        <p class="card-details">CVV: {{cvv}}</p>
+        <p class="card-details">Expiration Date: {{expirationDate}}</p>
+        <p>
+          Please keep this information secure and do not share it with anyone.
+        </p>
+        <p>
+          If you have any questions or need further assistance, please feel free
+          to contact our support team.
+        </p>
+        <p>Best regards,<br />payme Support Team</p>
+      </div>
+      <div class="footer">&copy; 2024 payme. All rights reserved.</div>
+    </div>
+  </body>
+</html>
