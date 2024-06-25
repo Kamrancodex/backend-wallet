@@ -20,9 +20,12 @@ mongoose
 
 // Configure CORS
 const corsOptions = {
-  origin: "https://wallet-frontend-qz68.vercel.app", // Replace with your frontend URL
-  optionsSuccessStatus: 200,
+  origin: "https://wallet-frontend-qz68.vercel.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 };
+
 app.use(cors(corsOptions));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(express.json());
