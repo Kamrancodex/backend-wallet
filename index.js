@@ -7,13 +7,10 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 mongoose
-  .connect(
-    "mongodb+srv://rohitvlogs02:RwH0X8bJF3IpfoxL@cluster0.lhw3atd.mongodb.net/walletApp",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -23,7 +20,7 @@ mongoose
 
 // Configure CORS
 const corsOptions = {
-  origin: "https://wallet-frontend-qz68.vercel.app/", // Replace with your frontend URL
+  origin: "https://wallet-frontend-qz68.vercel.app", // Replace with your frontend URL
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
