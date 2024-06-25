@@ -109,9 +109,10 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 3. **Start the development server:**
    bash Copy code
 
-````
+```
 
-node index.js ```
+node index.js
+```
 
 ### Usage
 
@@ -122,6 +123,7 @@ Usage
 **Manage Wallet:** Transfer and request money, view balance charts.
 **Manage Cards:** Apply for new credit cards, add debit cards, and view card details.
 **Profile Management:** Update your personal information, change your password, and upload a profile picture.
+
 ### Future Features
 
 - **Cryptocurrency Integration**
@@ -137,26 +139,24 @@ Usage
   - **Real-time Exchange Rates**
     - Display real-time crypto exchange rates for accurate transactions.
 
-
-
 ### Contributing We welcome
 
 contributions to the Wallet Management System. Please follow these steps to
 contribute:
+
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
 3. Make your changes and commit them. Push your changes to your fork. Open a pull
-request to the main repository.
-4.License This project is licensed under the MIT
-**License.** See the LICENSE file for more details. Contact If you have any
-questions or suggestions, feel free to reach out: Email: najarkamran212@gmail.com
-
+   request to the main repository.
+   4.License This project is licensed under the MIT
+   **License.** See the LICENSE file for more details. Contact If you have any
+   questions or suggestions, feel free to reach out: Email: najarkamran212@gmail.com
 
 i will be adding more features to this project i have many ideas like somehow incorporating crypto and pay with crypto feature
 
 ## The frontend is available at github repo
+
 ```
 
 https://github.com/Kamrancodex/wallet-backend
 ```
-````
